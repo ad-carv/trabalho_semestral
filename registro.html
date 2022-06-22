@@ -16,8 +16,7 @@
     
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                 <li><a href="index.html" class="nav-link px-2 text-secondary">Inicio</a></li>
-                <li><a href="aulas.html" class="nav-link px-2 text-white">Aulas e atividades</a></li>
-                <li><a href="notas.html" class="nav-link px-2 text-white">Notas</a></li>
+                <li><a href="aulas.html" id="menuAula" class="nav-link px-2 text-white">Atividades e Notas</a></li>
             </ul>
     
             <div class="text-end">
@@ -46,12 +45,16 @@
                             <input type="text" class="form-control" id="nome" placeholder="Nome">
                           </div>
                           <div class="col-auto">
-                            <label for="sobrenome" class="visually-hidden">Sobre nome</label>
-                            <input type="text" class="form-control" id="sobrenome" placeholder="sobrenome">
-                          </div>
-                          <div class="col-auto">
                             <label for="tipo" class="visually-hidden">Tipo</label>
-                            <input type="text" class="form-control" id="tipo" placeholder="tipo">
+                            <select name="tipo" id="tipo"  class="form-control" onchange="selectTipoChange()">
+                                <option value="">Tipo</option>
+                                <option value="aluno">Aluno</option>
+                                <option value="professor">Professor</option>
+                                <option value="pai">Pai</option>
+                            </select>
+
+                            <select name="alunoTipoPai" id="alunoTipoPai"  class="form-control">
+                            </select>
                           </div>
                          <div class="col-auto">
                            <label for="staticEmail2" class="visually-hidden">Email</label>

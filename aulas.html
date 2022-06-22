@@ -13,8 +13,7 @@
         
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                   <li><a href="index.html" class="nav-link px-2 text-secondary">Inicio</a></li>
-                  <li><a href="aulas.html" class="nav-link px-2 text-white">Aulas e atividades</a></li>
-                  <li><a href="notas.html" class="nav-link px-2 text-white">Notas</a></li>
+                  <li><a href="aulas.html" id="menuAula" class="nav-link px-2 text-white">Atividades e Notas</a></li>
                 </ul>
         
                 <div class="text-end">
@@ -56,14 +55,58 @@
                                 <button type="button" id="criaAula" class="btn btn-primary mb-3">adicionar aula</button>
                               </div>
                             </form>
+
+
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th>Nome da aula</th>
+                                  <th>Alunos</th>
+                                  <th>Nº atividades</th>
+                                  <th>Ações</th>
+                                </tr>
+                              </thead>
+                              <tbody id="tabelaAulasProfessor">
+                              </tbody>
+                            </table>
+                            <br /><br /><br />
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th>Aula</th>
+                                  <th>Atividade</th>
+                                  <th>Aluno</th>
+                                  <th>nota</th>
+                                </tr>
+                              </thead>
+                              <tbody id="tabelaAtividadesProfessor">
+                              </tbody>
+                            </table>
                          </div>
 
                          <div id="alunotabelaaulas" style="display:none">
-                            aluno
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th>Aula</th>
+                                  <th>Atividade</th>
+                                  <th>nota</th>
+                                  <th>Ações</th>
+                                </tr>
+                                <tbody id="tableAtividadeAlnuo"></tbody>
+                            </table>
                           </div>
 
                         <div id="paitabelaaulas" style="display:none">
-                           pai
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th>Aula</th>
+                                <th>Atividade</th>
+                                <th>nota</th>
+                              </tr>
+                              <tbody id="tabelaPaiAluno"></tbody>
+                          </table>
                         </div>
                     
                      </div>
